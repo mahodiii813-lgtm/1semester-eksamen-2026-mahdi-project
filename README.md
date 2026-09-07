@@ -1,1 +1,0 @@
-# 1semester-eksamen-2026-mahdi-project
