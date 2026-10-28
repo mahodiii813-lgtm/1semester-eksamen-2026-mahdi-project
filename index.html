@@ -3,23 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>LUMINA — Light, wherever you are</title>
-    <meta name="description" content="LUMINA is a portable lamp and speaker in one. Warm light, rich sound and a leather handle. Designed in Aarhus, Denmark." />
-
-    
-    <link rel="icon" href="favicon.svg" />
-
-  
+   <title>LUMINA — Light, wherever you are</title>
+  <meta name="description" content="LUMINA is a portable lamp and speaker in one. Warm light, rich sound and a leather handle. Designed in Aarhus, Denmark." />
+   <link rel="icon" href="favicon.svg" />
     <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
     <link href="https://api.fontshare.com/v2/css?f%5B%5D=boska@400,500,700&f%5B%5D=satoshi@400,500,700&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&display=swap" rel="stylesheet" />
-
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    
     <header class="header">
       <div class="header__inner">
         <button class="icon-btn icon-btn--home" type="button" aria-label="Home">
@@ -31,27 +25,22 @@
         <a class="brand" href="#home" aria-label="LUMINA home">
           <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
             <rect width="32" height="32" rx="9" fill="currentColor" />
-            <circle cx="16" cy="16" r="6.5" fill="#FFD23F" />
-          </svg>
+          <circle cx="16" cy="16" r="6.5" fill="#FFD23F" />
+        </svg>
           <span class="brand__word">LUMINA</span>
         </a>
-
-        <nav class="nav" aria-label="Main menu">
-          <ul class="nav__list">
-             <nav class="nav" aria-label="Main menu">
-          <ul class="nav__list">
-            <li><a class="nav__link" href="#home">Home</a></li>
-            <li><a class="nav__link" href="#about">About</a></li>
-            <li><a class="nav__link" href="#contact">Contact</a></li>
-          </ul>
-          </ul>
-        </nav>
-
-        <div class="header__actions">
-          <button class="icon-btn" type="button" aria-label="Search">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <circle cx="10" cy="10" r="6.5" fill="none" stroke="currentColor" stroke-width="1.4"/>
-              <path d="m14.5 14.5 5 5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+ <nav class="nav" aria-label="Main menu">
+  <ul class="nav__list">
+    <li><a class="nav__link" href="#home">Home</a></li>
+    <li><a class="nav__link" href="#about">About</a></li>
+    <li><a class="nav__link" href="#contact">Contact</a></li>
+  </ul>
+</nav>
+ <div class="header__actions">
+  <button class="icon-btn" type="button" aria-label="Search">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+   <circle cx="10" cy="10" r="6.5" fill="none" stroke="currentColor" stroke-width="1.4"/>
+      <path d="m14.5 14.5 5 5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
             </svg>
           </button>
           <button class="icon-btn" type="button" aria-label="Cart">
@@ -69,10 +58,8 @@
         </div>
       </div>
     </header>
-
     <main id="main">
-      
-      <section class="hero" id="home">
+       <section class="hero" id="home">
         <div class="hero__content">
           <h1 class="hero__title">Carry the warmth,<br />play the moment.</h1>
           <p class="hero__lede">
@@ -103,55 +90,41 @@
           <img class="hero__speaker" src="speaker.png" alt="LUMINA portable speaker in oatmeal with cognac leather handle" />
         </div>
       </section>
-
-      
-      <section class="colors" id="colors">
-        <div class="section-head">
-          <p class="eyebrow">Four finishes</p>
-          <h2 class="section-title">Choose your light.</h2>
-          <p class="section-lede">
-            Four colors, one light. Choose from Mist, Moss, Lilac and Ember —
-            each with a hand-stitched leather strap.
-          </p>
-        </div>
-
-        <div class="switcher">
-          <div class="switcher__stage">
-            <div class="switcher__lamp" id="switcher-lamp-wrap">
-              <img class="switcher__img" id="switcher-lamp" src="speaker.png" alt="LUMINA speaker in Mist" />
-              <div class="switcher__tint" id="switcher-tint" aria-hidden="true"></div>
-              <div class="switcher__tint switcher__tint--deep" id="switcher-tint-deep" aria-hidden="true"></div>
-              <div class="switcher__tint switcher__tint--wash" id="switcher-tint-wash" aria-hidden="true"></div>
-              <div class="lamp-wordmark" id="lamp-wordmark" aria-hidden="true">
-                <span class="lamp-wordmark__dot"></span>
-                <span class="lamp-wordmark__text">lumina</span>
-                <span class="lamp-wordmark__bar"></span>
-              </div>
-            </div>
-            <div class="switcher__shadow" aria-hidden="true"></div>
-          </div>
-
-          <div class="switcher__panel">
-            <div class="switcher__info">
-              <p class="switcher__name" id="switcher-name">Mist</p>
-              <p class="switcher__price" id="switcher-price">€129 · in stock</p>
-              <p class="switcher__desc" id="switcher-desc">
-                The original. A pale ivory woven fabric that picks up the light
-                of the room it sits in.
-              </p>
-            </div>
-
-            <div class="swatches" role="radiogroup" aria-label="Choose a color"></div>
-
-            <div class="switcher__cta">
-              <button class="btn btn--primary" type="button" data-add-to-cart>Add to cart</button>
-              <button class="btn btn--ghost" type="button" data-fav aria-pressed="false">Save</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      
+ <section class="colors" id="colors">
+  <div class="section-head">
+    <p class="eyebrow">Four finishes</p>
+    <h2 class="section-title">Choose your light.</h2>
+    <p class="section-lede">
+      Four colors, one light. Choose from Mist, Moss, Lilac and Ember —
+      each with a hand-stitched leather strap.
+    </p>
+  </div>
+  <div class="switcher">
+    <div class="switcher__stage">
+      <div class="switcher__lamp" id="switcher-lamp-wrap">
+        <img class="switcher__img" id="switcher-lamp" src="speaker.png" alt="LUMINA speaker in Mist">
+        <div class="switcher__tint" id="switcher-tint" aria-hidden="true" style="--tint: transparent; --tint-opacity: 0;"></div>
+        <div class="switcher__tint switcher__tint--deep" id="switcher-tint-deep" aria-hidden="true" style="--tint: transparent; --tint-opacity: 0;"></div>
+        <div class="switcher__tint switcher__tint--wash" id="switcher-tint-wash" aria-hidden="true" style="--tint: transparent; --tint-opacity: 0;"></div>
+      </div>
+    </div>
+     <div class="switcher__panel">
+      <div class="switcher__name" id="switcher-name">Mist</div>
+      <div class="switcher__price" id="switcher-price">€129 · in stock</div>
+      <p class="switcher__desc" id="switcher-desc">The original. A pale ivory woven fabric that picks up the light of the room it sits in.</p>
+      <div class="swatches">
+        <button class="swatch" type="button" role="radio" aria-checked="false" data-id="moss" aria-label="Moss" title="Moss" style="--sw:#3c6b4a;"></button>
+        <button class="swatch" type="button" role="radio" aria-checked="false" data-id="lilac" aria-label="Lilac" title="Lilac" style="--sw:#8a6ba8;"></button>
+        <button class="swatch is-active" type="button" role="radio" aria-checked="true" data-id="mist" aria-label="Mist — original" title="Mist — original" style="--sw:#d8cfc0;"></button>
+        <button class="swatch" type="button" role="radio" aria-checked="false" data-id="ember" aria-label="Ember" title="Ember" style="--sw:#b23a2e;"></button>
+      </div>
+      <div class="switcher__actions">
+        <button class="btn btn--cart" type="button">Add to cart</button>
+        <button class="btn btn--ghost" type="button">Save</button>
+      </div>
+    </div>
+  </div>
+</section>
       <section class="features" id="features">
         <div class="features__head">
           <h2 class="features__title">One object, two<br />senses.</h2>
@@ -171,8 +144,6 @@
           </article>
         </div>
       </section>
-
-      
       <section class="reviews" id="reviews">
         <div class="reviews__head">
           <p class="reviews__kicker">From Instagram</p>
@@ -199,21 +170,20 @@
             <p class="review-card__author">Liv&;Emil · Copenhagen</p>
           </article>
         </div>
-        <div class="reviews__follow">
-          <span class="reviews__ig-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.1" fill="#ffffff" stroke="none"/></svg></span>
-          <span class="reviews__ig-handle">
-            @luminaone
-            <span class="reviews__ig-meta">12.4k followers. 340 posts</span>
-          </span>
-          <span class="reviews__follow-btn">FOLLOW</span>
+         <a class="reviews__follow" href="https://www.instagram.com/luminaone" target="_blank" rel="noopener noreferrer">
+        <span class="reviews__ig-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.1" fill="#ffffff" stroke="none"/></svg></span>
+        <span class="reviews__ig-handle">
+          @luminaone
+          <span class="reviews__ig-meta">12.4k followers. 340 posts</span>
+        </span>
+        <span class="reviews__follow-btn">FOLLOW</span>
+      </a>
         </div>
       </section>
     </main>
-
-   
-    <footer class="footer">
-      <div class="footer__columns">
-        <div class="footer__col">
+  <footer class="footer">
+   <div class="footer__columns">
+  <div class="footer__col">
           <h3>PAYMENTS</h3>
           <ul>
             <li>Mastercard</li>
@@ -244,9 +214,9 @@
             <span class="footer__social-icon" role="img" aria-label="Facebook">f</span>
             <span class="footer__social-icon footer__social-icon--ig" role="img" aria-label="Instagram">IG</span>
           </div>
+          </div>
         </div>
-      </div>
-      <div class="footer__bottom">
+         <div class="footer__bottom">
         <p class="footer__copyright">2026-2028 companyName Inc.</p>
         <div class="footer__badges">
           <span class="badge badge--mc">Mastercard</span>
@@ -254,7 +224,6 @@
         </div>
       </div>
     </footer>
-
-    <script src="script.js"></script>
-  </body>
+ <script src="script.js"></script>
+    </body>
 </html>
